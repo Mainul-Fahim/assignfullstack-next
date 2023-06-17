@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import React, { Fragment, useEffect } from "react";
+import React, { Component } from "react";
 import type { AppProps } from "next/app";
 import Layout from "../components/Layouts/Layout";
 
