@@ -16,8 +16,8 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-const field1 = ['Soil', 'Tile', 'Yield', 'Wetlands'];
-const field2 = ['Weather', 'Crop History', 'Hail History', 'NOVi'];
+const field1: string[] = ['Soil', 'Tile', 'Yield', 'Wetlands'];
+const field2: string[] = ['Weather', 'Crop History', 'Hail History', 'NOVi'];
 
 const FiledData = () => {
     return (
@@ -38,7 +38,7 @@ const FiledData = () => {
                                  
                                 />
                             </ListItem>
-                            {field1.map(field => <ListItem>
+                            {field1.map((field,index) => <ListItem key={index}>
                                 <ListItemText
                                     primary={field}
                                 />
@@ -49,7 +49,7 @@ const FiledData = () => {
 
                         <List>
 
-                            {field2.map(field => <ListItem>
+                            {field2.map((field,index) => <ListItem key={index}>
                                 <ListItemText
                                     primary={field}
                                 />

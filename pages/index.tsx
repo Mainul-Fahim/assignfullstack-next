@@ -18,7 +18,7 @@ const theme = createTheme({
 });
 //home page display
 // @ts-ignore
-const Home: NextPage = ({ user }) => {
+const Home: NextPage = () => {
 
 
   return (

@@ -25,8 +25,8 @@ const FieldStatus = () => {
                        >
 
                         {
-                            field.map(fd=>
-                            <Item sx={{backgroundColor: '#D3D3D3', fontWeight:'bold', width: '100%'}}>{fd}</Item>)
+                            field.map((fd,index)=>
+                            <Item key={index} sx={{backgroundColor: '#D3D3D3', fontWeight:'bold', width: '100%'}}>{fd}</Item>)
                         }
 
                     </Stack>

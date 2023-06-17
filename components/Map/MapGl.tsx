@@ -9,14 +9,6 @@ const MAPBOX_TOKEN = 'pk.eyJ1Ijoia2t1cnR6IiwiYSI6ImNrOWE4djN1eDAyd3UzZXBuYzF1OWt
 
 const MapGl = () => {
 
-    const [viewport, setViewport] = useState({
-        width: '100%',
-        height: '100%',
-        latitude: 0, // Initial latitude
-        longitude: 0, // Initial longitude
-        zoom: 10 // Initial zoom level
-    });
-
     const [geojsonData, setGeojsonData] = useState(null);
 
     useEffect(() => {

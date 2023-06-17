@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const FieldSection = () => {
     
-    const [expand,setExpand] = useState(true)
+    const [expand,setExpand] = useState<boolean>(true)
     
     return (
         <Box sx={{ flexGrow: 1, marginBottom: '10px' }}>
